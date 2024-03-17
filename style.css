@@ -1,0 +1,717 @@
+/*
+Theme Name: Twenty Twenty Child
+Theme URI: https://wp-themes.com/twentytwenty
+Author: ChildThemeWP.com
+Author URI: https://childthemewp.com
+Description: My WordPress Twenty Twenty child theme.
+Template: twentytwenty
+License: GNU General Public License v3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Version: 1.0.0
+Text Domain: twentytwenty-child
+*/
+.newsform {
+  display: flex;
+  align-items: flex-start;
+}
+.subscription-box .btn-primary{
+  margin-top: 0px;
+}
+.subscription-box .wpcf7-response-output{
+  border-color: #4B66A000 !important;
+}
+.social-icons a {
+  background-color: #fff !important;
+}
+.social-icons a:hover {
+  background-color: var(--main-primary-color) !important;
+}
+span.wpcf7-spinner {
+  position: absolute;
+  bottom: 0px;
+}
+.footer-box-bg span.wpcf7-not-valid-tip {
+  color: #fff;
+  font-size: 15px;
+}
+.wpcf7 form .wpcf7-response-output {
+  color: #fff;
+}
+.what-we-do-box img.ad-img{
+  filter: brightness(0) invert(1);
+}
+.what-we-do-box:hover img.ad-img{
+  filter: none;
+}
+a#loadMore{
+  color: var(--color-one) !important;
+  padding: 15px 40px;
+  font-size: 15px;
+  margin: 10px 0;
+  display: inline-block;
+  font-weight: 400;
+  border: 1px solid #000;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+a#loadMore:hover{
+  background-color: var(--main-primary-color);
+  color: #fff !important;
+}
+.publication-box a{
+  color: var(--main-primary-color);
+}
+.attorney-pcontent ol{
+  margin-left: -20px;
+}
+.attorney-pcontent ul li, .single-event .event-content ul li{
+  position: relative;
+  padding-left: 17px;
+  font-size: 18px;
+  color: var(--color-three);
+}
+.attorney-pcontent ol li{
+  font-size: 18px;
+  color: var(--color-three);
+}
+.attorney-pcontent ul li:before, .single-event .event-content ul li:before{
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-two);
+}
+li.menu-item.mobile-dropdown-hide ul.dropdown-list li:last-child{
+  background-color: var(--color-two);
+}
+ul.sub-dropdown-list.sublist-1 li:last-child {background-color: transparent !important;}
+ul.sub-dropdown-list.sublist-1 li:last-child:hover {
+  background-color: var(--color-two) !important;
+}
+
+.tech-content p{
+  /* padding: 0px !important; */
+}
+.event-content{
+  padding-bottom: 50px;
+}
+.appropriate-program h4{
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+}
+.appropriate-program{
+  margin-top: 30px;
+}
+.right-side-col li a{
+  color: #102B49 !important;
+}
+.right-side-col li a:hover{
+  color: var(--color-two) !important;
+}
+.only-pdf-show{
+  display: none !important;
+}
+.events-schedule:hover .event-schedule-img:before{
+
+}
+.post-type-archive-event  .event-schedule-img{
+  /* clip-path: polygon(12% -3%, 100% 0%, 88% 100%, 0px 100%); */
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.events-schedule:hover .event-schedule-img:before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 35px;
+  /* border: 2px solid var(--color-two); */
+  width: 86%;
+  height: 100%;
+  transform: skew(-7deg);
+}
+.events-schedule:hover:before{
+   content: ""; transform: skew(-7deg);
+}
+input#is-search-input-239 {
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  height: 50px;
+}
+.is-form-id-239 button.is-search-submit {
+  height: 50px !important;
+  width: 50px !important;
+}
+form.is-search-form.is-disable-submit.is-form-style.is-form-style-3.is-form-id-239.is-ajax-search {
+  display: flex;
+}
+/*Print PDF CSS*/
+
+@media print{
+  header#header, .main-bg footer, section.attorneys-banner-bg, .event1-inner-pg .col-lg-4.col-md-4.col-sm-4.col-12, .print-content-inner, .publication-butn.event1a-btn, .back-opt{
+      display: none;
+  }
+  .pdf-hide{
+      display: none;
+  }
+  .publication-inner-text{
+      width: 100% !important;
+  }
+  .event1-inner-pg .col-lg-8.col-md-8.col-sm-8.col-12, .single-newsletter  .col-lg-8.col-md-8.col-sm-8.col-12, .single-alert .col-lg-8.col-md-8.col-sm-8.col-12, .single-book .col-lg-8.col-md-8.col-sm-8.col-12, .single-publication  .col-lg-8.col-md-8.col-sm-8.col-12, .single-publication .col-lg-4.col-md-4.col-sm-4.col-12, .single-book .col-lg-4.col-md-4.col-sm-4.col-12, .single-alert .col-lg-4.col-md-4.col-sm-4.col-12, .single-newsletter .col-lg-4.col-md-4.col-sm-4.col-12, .single-attorney .col-lg-4.col-md-4.col-sm-4.col-12{
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+  .attorneys-heading {
+    margin-left: 0px !important;
+  }
+  .people-featured-pdf-show{ width: 30% !important; margin-top: 60px !important; display: block !important;}
+  blockquote { border-color: #ffffff !important; }
+  .right-side-col{
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  a[href]:after {content: none !important;}
+  .right-side-col ul li a { text-decoration: underline !important; outline: none !important;}
+  body, h1, h2, h3, h4, h5, h6, span, li{
+      font-family: 'Poppins', sans-serif !important;
+  }
+  li{
+      list-style-type: disc;
+  }
+  .attorney-print-content{ display: block !important; }
+  .single-attorney .col-lg-8.col-md-8.col-sm-8.col-12, .single-attorney .profile-tabs-sec .nav-tabs{ display: none !important; }
+  .attorney-print-content h4{font-size: 28px;}
+  .only-pdf-show{
+      display: block !important;
+  }
+  .tech-content a, .pra-div-content a{
+      display: none !important;
+  }
+}
+.attorneys-card img {
+  clip-path: polygon(12% 0, 100% 0%, 88% 100%, 0% 100%);
+}
+.overview-content-area{
+  margin-bottom: 30px;
+}
+/*.news-tab-pane .col-lg-12, .events-tab-pane .col-lg-12{display: block !important;}*/
+
+li.practices-events span {
+  display: inline-block;
+}
+li.practices-events span:after{
+ content: ','; 
+ padding-right: 6px;
+}
+li.practices-events span:last-child::after{
+  content:'';
+}
+.ask-banner-padd img{
+  clip-path: polygon(0 0, 100% 0%, 92% 100%, 0% 100%);
+}
+.paged .nesttabs img {
+  clip-path: polygon(5% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 10%);
+}
+
+.overview-content-area ul li, .ransomwar-text ul li{
+  font-size: 17px;
+  color: var(--color-three);
+  margin-bottom: 20px;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+.overview-content-area ul li:before{
+  content: "";
+  position: absolute;
+  margin-top: 10px;
+  left: 20px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-two);
+}
+.ransomwar-text ul li:before{
+  content: "";
+  position: absolute;
+  margin-top: 10px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-two);
+  margin-left: -20px;
+}
+.ransomwar-text a, .overview-content-area a{
+  color: var(--color-two) !important;
+}
+section.book-section {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.newsletter-pg-sec .right-side-col small.active:before {
+  background-color: var(--main-primary-color);
+  width: 6px;
+  height: 6px;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.newsletter-pg-sec .right-side-col small.active{
+  border: 1px solid #94ABD6;
+  background-color: transparent;
+}
+
+a.btn.btn-primary.btn-reset {
+  margin-left: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 529px){
+  a.btn.btn-primary.btn-reset {
+      margin-left: 0px !important;
+  }
+}
+
+@media  only screen and (min-width: 920px){
+  .main-honor-box h5 {
+      width: 80%;
+  }
+  span.wpcf7-form-control.wpcf7-checkbox{
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+  }
+}
+a.menu-link.menu-highlight span {
+  color: var(--main-primary-color);
+  font-weight: 500;
+}
+
+section.profile-tabs-sec .tab-content li {
+  font-size: 17px;
+  color: var(--color-three);
+  padding: 0px 0;
+}
+span.loadMoreBtn-label {
+  transform: skew(14deg);
+  display: flex;
+  align-items: center;
+}
+.back-opt{
+  display: none !important;
+}
+.footer-box-bg{
+  /*align-items: flex-start !important;*/
+}
+.google-map iframe {
+  width: 100% !important;
+}
+.row.location-flex img {
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.row.map-loc .mg-img img, .mg-img img{
+  clip-path: polygon(12% 0, 100% 0%, 88% 100%, 0% 100%);
+}
+.page-template-page-career .attorney-content-box a {
+  color: var(--color-two);
+}
+.attorneys-heading li{
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-one);
+}
+.banner-rt-btn.tier-div img{
+  width: 20px;
+  margin-left: 12px
+}
+.banner-rt-btn.tier-div span{
+  display: inline-block !important;
+  width: auto !important;
+  font-size: 16px;
+}
+section.client-services-sec-bg img {
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.client-services-sec-bg .only-content p{
+  width: 100%;
+}
+.page-template-page-generic .right-side-col{
+  border-bottom: 0;
+}
+.row.generic-content {
+  align-items: flex-start !important;
+}
+.generic-content h6{
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-one);
+  font-family: inherit;
+  margin: 20px 0;
+}
+.row.generic-content .testimonial-sec-bg{
+  padding: 0px;
+}
+.row.generic-content .testimonials-slider p{
+  width: 100%;
+}
+.row.two-column-list .lt-line li {
+  font-size: 18px;
+  color: #000000;
+  position: relative;
+  font-weight: 500;
+  padding: 22px 0 0 27px;
+}
+.banner-rt-btn.tier-div {
+  margin-top: 30px;
+}
+.row.generic-content strong{
+  font-weight: 600;
+}
+img.img-fluid.img-right-fixed{
+  max-width: 120%;
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.row.anderson_two_colmn{
+  align-items: flex-start;
+}
+#sbi_images .sbi_item .sbi_photo_wrap{
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.sbi_header_text.sbi_no_bio h3 {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: var(--color-one) !important;
+  font-family: inherit;
+}
+p.ctf-tweet-text {
+  font-size: 18px;
+  color: var(--color-three);
+}
+#ctf .ctf-author-avatar img {
+  clip-path: circle(50% at 50% 50%);
+}
+a.twitter-share-button, a.twitter-follow-button {
+  color: #445c90;
+  margin-left: 10px;
+}
+.ctf-out-of-tweets p {
+  font-size: 18px;
+}
+a#ctf-more {
+  color: var(--color-one) !important;
+  padding: 15px 40px !important;
+  font-size: 15px;
+  display: inline-block;
+  font-weight: 400;
+  border: 1px solid #000 !important;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  background: transparent !important;
+  transform: skew(-14deg);
+  transition: 0.6s all ease-in-out;
+  display: table;
+  width: 20% !important;
+  margin: 0 auto !important;
+}
+a#ctf-more span {
+  transform: skew(14deg);
+  display: inline-block;    
+}
+ul.no-bullets li a{
+  color: var(--color-one) !important;
+}
+ul.no-bullets li{
+  padding: 10px 0 0 0px;
+}
+.ad-kl-content ul.no-bullets li:before{
+  width: 0px;
+  height: 0px;
+  background: none;
+}
+.ad-kl-content a {
+  color: #092054;
+}
+.form-area{
+  display: flex;
+  align-items: flex-start;
+}
+.form-area .field{
+  width: 100%;
+}
+.form-area span.wpcf7-form-control-wrap{
+  width: 100%;
+  padding: 15px;
+  margin: 0px;
+}
+.form-area .field p{
+  margin: 0px;
+  padding: 0px;
+}
+.formbtn input.btn-primary{
+  background-color: var(--main-primary-color) !important;
+  color: #fff;
+  margin-left: 15px;
+}
+.formbtn span.wpcf7-spinner{
+  width: 24px;
+  position: relative;
+  left: 20px;
+}
+.form-area span.wpcf7-not-valid-tip {
+  width: auto;
+  margin: 0px;
+  font-size: 15px;
+  color: red;
+}
+.ad-kl-content .wpcf7-response-output {
+  color: #000000 !important;
+}
+.form-area label{
+  color: #000;
+  font-weight: 600;
+  padding-left: 15px;
+}
+.listing-div-flex li:before {
+  content: "";
+  position: absolute;
+  top: 29px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-primary-color);
+  border-radius: 50%;
+}
+#search-results .col-12 {display: none;}
+#article-results .col-12 {display: none;}
+#alert-results .col-12 {display: none;}
+#video-results .col-12 {display: none;}
+#news-results .col-12 {display: none;}
+@media  only screen and (max-width: 768px){
+  .form-area{
+      display: block !important;
+  }
+  a#ctf-more {
+      width: 70% !important;
+  }
+  .generic-empty-space{
+      /* height: 0px !important; */
+  }
+}
+.event1-inner-pg .publication-sec-content li strong {
+  color: var(--color-two);
+}
+.mobile-dropdown  a i {
+  color: #fff !important;
+}
+header#header {
+  position: fixed;
+}
+div#carouselExampleFade, section.attorneys-banner-bg{
+  margin-top: 40px;
+}
+body.post-type-archive-alert .attorneys-card img, body.post-type-archive-video .attorneys-card img {
+  clip-path: polygon(10% 0, 98% 0%, 90% 100%, 2% 100%);
+}
+span.wpcf7-list-item-label{
+  width: 100%;
+  margin: 0px;
+  display: inline;
+}
+span.wpcf7-list-item{
+  width: 100%;
+  margin: 0px;
+}
+.post-type-archive-event section.forms-sec-bg.news-search-forms {
+  padding-bottom: 0px !important;
+}
+.page-heading{
+  text-transform: uppercase !important;
+}
+span.wpcf7-form-control.wpcf7-checkbox{
+width: 100%;
+margin-top: -10px;
+margin-left: -15px;
+}
+label.form-labeled {
+  margin-top: 15px;
+}
+.footer-subscription .rd-more-btn{
+      font-weight: 500;
+      border: 1px solid #fff;
+      padding: 16px 50px;
+      font-size: 15px;
+      color: #ffffff;
+      display: inline-block;
+      text-transform: uppercase;
+      transform: skew(-14deg);
+}
+.footer-subscription .rd-more-btn span{
+  transform: skew(14deg);
+  display: inline-block;
+  font-weight: 500;
+}
+.footer-subscription .rd-more-btn img{
+  filter: brightness(0) invert(1);
+}
+.footer-subscription .rd-more-btn:hover img{
+  filter: inherit;
+}
+.footer-subscription .rd-more-btn:hover{
+  background-color: #ffffff;
+  color: var(--main-primary-color);
+}
+.post-type-archive-industry-group .client-services-sec-bg{
+  padding-top: 0px !important;
+}
+.banner-rt-btn.tier-div span{
+  margin: 0px;
+}
+.row.generic-content .testimonial-sec-bg .responsive-testimonials div {
+  margin-bottom: 50px !important;
+}
+section.testimonial-sec-bg .load-more-btn span {
+  margin: 0px;
+  font-size: inherit;
+  display: inline-block;
+  width: 100%;
+}
+section.testimonial-sec-bg .load-more-btn a{
+  display: flex;
+  align-items: center;
+}
+.responsive-testimonials .testimonial-content{
+  display: none;
+}
+.single-publication  .ransomwar-text h6 {
+  margin-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.slider.responsive .slider-box{
+  cursor: pointer !important;
+}
+.insured-boxes-flex, .attorneys-card, .post-type-archive-event .tab-pane .col-12, .post-type-archive-book .insured-boxes-flex {    
+  cursor: pointer;
+}
+.newsletter-pg-sec .insured-boxes-flex{
+display: none;
+}
+.single-newsletter .load-more-btn{
+  margin-top: 40px;
+}
+.single-newsletter .key-points-text a {
+  color: #9bb0d7;
+}
+.newsletter-content ul li {
+  font-size: 18px;
+  color: var(--color-three);
+  padding-bottom: 10px;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.single-attorney .publication-box {
+  cursor: pointer;
+}
+
+.page-generic .row.generic-content li {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.page-generic .row.generic-content a{
+color: var(--color-two);
+  text-decoration: underline;
+}
+.attorneys-heading li a { cursor: text; }
+.loadmorebtnarea { margin: 0 auto; width: 100%;}
+.attorneys-heading.profile-pg li a { cursor: pointer; }
+section.who-we-are-sec .content-text p {font-size: 16px; line-height: 1.5em;}
+section.who-we-are-sec .content-text p{margin-bottom: 15px !important;}
+
+.a-sl-right-arrow.slick-arrow {
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  z-index: 999;
+  cursor: pointer;
+}
+.a-sl-left-arrow.slick-arrow {
+  position: absolute;
+  top: 0;
+  right: 110px;
+  z-index: 999;
+  cursor: pointer;
+}
+.tabs-inner-sldier .slick-slider {    
+  padding: 80px 0 0;
+}
+
+.a-sl-left-arrow i.fa.fa-angle-left, .a-sl-right-arrow i.fa.fa-angle-right{
+  font-size: 25px;
+  border: 1px solid var(--color-two);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-two);
+}
+@media  only screen and (max-width: 420px){
+  .a-sl-right-arrow.slick-arrow, .a-sl-left-arrow.slick-arrow {
+    top: 10px;
+  }
+}
+.single-attorney .profile-tabs-sec .tab-content>.tab-pane img{clip-path: none !important;}
+.attorney-print-content{ display: none; }
+
+.slider-box a, .content-text .banner-rt-btn a, .tier-div a{
+  color: var(--main-secondary-color);
+}
+li.anderson-event-links a{
+  color: var(--color-one);
+}
+li.anderson-event-links a:after{
+  content: ',';
+}
+li.anderson-event-links a:last-child:after{
+  content: '' !important;
+}
+.post-type-archive-industry-group .banner-rt-btn.tier-div span{
+  color: var(--main-secondary-color);
+}
+.post-type-archive-industry-group  .banner-rt-btn a:hover span {
+  color: #fff !important;
+}
+body.single-attorney section.profile-tabs-sec .pf-cls a {
+  color: var(--main-secondary-color);
+}
+button.wp-block-search__button.wp-element-button {
+  background-color: var(--main-primary-color);
+  color: #fff;
+}
+.post-type-archive-event .event-schedule-img img {
+  clip-path: polygon(12% -3%,100% 0%,88% 100%,0 100%) !important;
+}
+body.page-template-page-career .row.att-cont-row li {
+  list-style-type: disc;
+  margin-left: 20px !important;
+}
+/*span.loadMoreBtn-label:after {
+  font-family: 'FontAwesome';
+  content: '\f178';
+  font-size: 25px;
+  color: var(--main-primary-color);
+  margin: 0px 0px 0 10px;
+}
+a#loadMore:hover span.loadMoreBtn-label:after {
+  color: #fff;
+}*/
